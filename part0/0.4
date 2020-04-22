@@ -1,0 +1,10 @@
+title  Chain of events 
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note Form Data: note: content
+
+note right of server:
+server accesses the data in `req.body`
+server creates a new note object and adds it to `notes` array
+end note
+
+server->browser: redirect to https://fullstack-exampleapp.herokuapp.com/notes

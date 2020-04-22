@@ -1,0 +1,14 @@
+title New note
+
+browser->server: AJAX POST https://fullstack-exampleapp.herokuapp.com/new_note Content-Type: application/json Request payload: {content: 'content', date: '2019-06-15T04:21:21.434Z'}
+
+note right of server:
+server accesses the data in `req.body`
+server creates a new note object and adds it to `notes` array
+end note
+
+server->browser: response data {"message":"note created"}
+
+note left of browser:
+browser rerenders notes
+end note
