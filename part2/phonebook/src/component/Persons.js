@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Persons = ({person,filter}) =>{
+const Persons = ({person,removedPerson}) =>{
+
   return(
     <div>
-     {person
-          .filter(contact =>contact.name.toLowerCase().includes(filter))
-          .map((contact,idx) => 
-            <p key={idx}>{contact.name} {contact.number}</p>
-        )}
+        
+        <div style={{paddingBottom:'1.5em'}}>{person.name} {person.number} <button onClick={removedPerson}>Delete</button></div>
+        
     </div>
+   
   )
 }
 
