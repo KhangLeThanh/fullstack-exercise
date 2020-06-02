@@ -60,7 +60,7 @@ const App = () => {
                
               })
               .catch(error => {
-                console.log('test' ,error)
+                console.log(error)
                 setPersons(persons.filter(person => person.id !== changedInfo.id))
                 setErrorMessage(`Information of ${newInfo.name} has already been removed from server`)
                 setTimeout(() => {
@@ -77,6 +77,7 @@ const App = () => {
         personService
           .create(personObject)
           .then(returnedPerson => {
+            console.log("i")
             setPersons(persons.concat(returnedPerson))
             setNewInfo('')
             setSuccessrMessage(`Added ${newInfo.name}`)
@@ -85,7 +86,11 @@ const App = () => {
             }, 5000)
     
           })
-          
+          .catch(error => {
+            console.log(error.response.data.error)
+            setErrorMessage(error.response.data.error)
+          })
+           
         
       }
     }

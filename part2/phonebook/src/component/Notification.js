@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Notification = ({ success_message, error_message }) => {
-    console.log(success_message)
-    
+const Notification = ({ success_message, error_message }) => {    
     return (
         <div>
             {success_message !== null ?
