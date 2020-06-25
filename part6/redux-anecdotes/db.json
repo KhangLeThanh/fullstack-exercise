@@ -1,0 +1,29 @@
+{
+  "anecdotes": [
+    {
+      "content": "Premature optimization is the root of all evil.",
+      "votes": 19,
+      "id": "25170"
+    },
+    {
+      "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+      "votes": 6,
+      "id": "98312"
+    },
+    {
+      "content": "test",
+      "votes": 6,
+      "id": "23331"
+    },
+    {
+      "content": "If no one loves you, love yourself",
+      "votes": 8,
+      "id": "26414"
+    },
+    {
+      "content": "maybe you love me",
+      "id": "7482",
+      "votes": 0
+    }
+  ]
+}
